@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font_pi58amdc5v/iconfont.css">
+    <title>页面</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .iphone {
+        font-size: 10px;
+        margin: 30px;
+        width: 260px;
+        height: 520px;
+        border-radius: 40px;
+        border: 2px solid #e0e0e0;
+        /* background-color: red; */
+
+    }
+
+    .top {
+        width: 100px;
+        height: 50px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .camera {
+        width: 10px;
+        height: 10px;
+        margin: auto;
+        border: 1px solid #e0e0e0;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    .sound {
+        width: 50px;
+        height: 4px;
+        margin: auto;
+        border-radius: 2px;
+        border: 1px solid #e0e0e0;
+        background-color: white;
+    }
+
+    .content {
+        width: 250px;
+        height: 420px;
+        margin: auto;
+        border: 1px solid #eeeeee;
+        background-color: #eeeeee;
+
+    }
+
+    ul {
+        font-size: 12px;
+
+    }
+
+    li {
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .header {
+        font-size: 10px;
+        background-color: #ffffff;
+    }
+
+    .header_top {
+        width: 95%;
+        height: 20px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .header_m {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .boxs {
+        width: 60px;
+        height: 18px;
+        border: 1px solid #ff6700;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .box-l {
+        width: 30px;
+        height: 18px;
+        background-color: #ff6700;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+    }
+
+    .box-r {
+        width: 30px;
+        height: 18px;
+        background-color: #ffffff;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
+
+    .header_b {
+        width: 100%;
+        display: flex;
+        margin: 4px auto;
+        justify-content: space-evenly;
+    }
+
+    .usdt {
+        border-bottom: 2px solid #ff6700;
+    }
+
+    .list {
+        width: 99%;
+        height: 70px;
+        margin: 0 auto;
+        padding: 0 2px;
+        margin-bottom: 5px;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .l_L {
+        width: 63%;
+
+    }
+
+    .l_L span {
+        font-size: 9px;
+        color: #6e6c6c;
+    }
+    .l_L .first{
+        font-size: 10px;
+        color: black;
+    }
+
+    img {
+        margin-top: 4px;
+        width: 26px;
+        height: 26px;
+
+    }
+
+    .image-1 {
+        font-size: 10px;
+        margin-top: 4px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .image-1 .everyday span {
+        display: block;
+        font-size: 10px;
+    }
+
+    .l_R {
+       
+        margin-top: 15px;
+    }
+
+    .l_R span {
+        color: #ff6700;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .list .iconfont {
+        font-size: 10px;
+    }
+
+    .buy {
+        width: 30px;
+        height: 14px;
+        font-size: 10px;
+        text-align: center;
+        margin-top: 4px;
+        border: 1px solid #ff6700;
+        border-radius: 4px;
+    }
+
+
+    .footer {
+        width: 100%;
+        height: 50px;
+        margin: 6px auto;
+        background-color: #ffffff;
+    }
+
+    .footer-t {
+        margin-top: 5px;
+        padding-top: 6px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .footer-b {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .footer-b span {
+        font-size: 12px;
+
+    }
+
+    .footer .iconfont {
+        font-size: 22px;
+    }
+
+    .button {
+        width: 36px;
+        height: 36px;
+        margin: 4px auto;
+        background-color: white;
+        border: 1px solid #e0e0e0;
+        border-radius: 50%;
+    }
+</style>
+
+<body>
+    <div class="iphone">
+        <!-- 手机头部 -->
+        <div class="top">
+            <div class="camera"></div>
+            <div class="sound"></div>
+        </div>
+
+        <!-- 显示屏部分 -->
+        <div class="content">
+            <!-- 最顶层 -->
+            <ul>
+                <li class="header">
+                    <div class="header_top">
+                        <div class="image-l">
+                            <i class="iconfont icon-IOTtubiao_huabanfuben">
+                            </i>
+                            <span>DEMO</span>
+                            <i class="iconfont icon-wuxianwang
+                                        "></i>
+                        </div>
+                        <span>9:40 AM</span>
+                        <div class="image-r">
+                            <span>100%</span>
+                            <i class="iconfont icon-iconset0252
+                                        "></i>
+
+                        </div>
+                    </div>
+
+                    <div class="header_m">
+                        <span>
+                            CNY
+                            <i class="iconfont icon-xiangxia1"></i>
+                        </span>
+                        <div class="boxs">
+                            <div class="box-l">
+                                <span>买币</span>
+                            </div>
+                            <div class="box-r">
+                                <span>卖币</span>
+                            </div>
+                        </div>
+                        <i class="iconfont icon-21"></i>
+                    </div>
+                    <div class="header_b">
+                        <span class="usdt">USDT</span>
+                        <span>BTC</span>
+                        <span>ETH</span>
+                        <span>EOS</span>
+                </li>
+
+
+                <!-- 第二行· -->
+                <li class="l_1 list">
+                    <div class="l_L">
+                        <div class="image-1">
+                            <img src="./img/img-1.PNG" alt="">
+                            <div class="everyday">
+                                <span class="first">天天撒比 <i class="iconfont icon-v"></i></span>
+                                <span>成交单：1263 成交率：98%</span>
+                            </div>
+                        </div>
+                        <span>数量：8000.5681 USDT</span>
+                        <span>数量：500.20000 CNY</span>
+
+                    </div>
+                    <div class="l_R">
+                        <span>6.88 CNY</span>
+                        <span>
+                            <i class="iconfont icon-iconfontjikediancanicon20"></i>
+                            <i class="iconfont icon-weixin"></i>
+                            <i class="iconfont icon-zhifubao"></i>
+                        </span>
+                        <div class="buy">
+                            购买
+                        </div>
+
+                    </div>
+                </li>
+
+
+                <!-- 第三行· -->
+                <li class="l_2 list">
+                    <div class="l_L">
+                        <div class="image-1">
+                            <img src="./img/img-1.PNG" alt="">
+                            <div class="everyday">
+                                <span class="first">币圈小商人 <i class="iconfont icon-v"></i></span>
+                                <span>成交单：3786 成交率：99%</span>
+                            </div>
+                        </div>
+                        <span>数量：8000.5681 USDT</span>
+                        <span>数量：500.20000 CNY</span>
+
+                    </div>
+                    <div class="l_R">
+                        <span>6.88 CNY</span>
+                        <span>
+                            <i class="iconfont icon-iconfontjikediancanicon20"></i>
+                            <i class="iconfont icon-weixin"></i>
+                            <i class="iconfont icon-zhifubao"></i>
+                        </span>
+                        <div class="buy">
+                            购买
+                        </div>
+
+                    </div>
+                </li>
+
+
+                <!-- 第四行 -->
+                <li class="l_3 list">
+                    <div class="l_L">
+                        <div class="image-1">
+                            <img src="./img/img-1.PNG" alt="">
+                            <div class="everyday">
+                                <span class="first">币爷 <i class="iconfont icon-v"></i></span>
+                                <span>成交单：86 成交率：89%</span>
+                            </div>
+                        </div>
+                        <span>数量：8000.5681 USDT</span>
+                        <span>数量：500.20000 CNY</span>
+
+                    </div>
+                    <div class="l_R">
+                        <span>6.88 CNY</span>
+                        <span>
+                            <i class="iconfont icon-weixin"></i>
+                            <i class="iconfont icon-zhifubao"></i>
+                        </span>
+                        <div class="buy">
+                            购买
+                        </div>
+
+                    </div>
+                </li>
+
+
+                <!-- 第五行 -->
+                <li class="1_4 list">
+                    <div class="l_L">
+                        <div class="image-1">
+                            <img src="./img/img-1.PNG" alt="">
+                            <div class="everyday">
+                                <span class="first">诚信商行 <i class="iconfont icon-v"></i></span>
+                                <span>成交单：5284 成交率：96%</span>
+                            </div>
+                        </div>
+                        <span>数量：8000.5681 USDT</span>
+                        <span>数量：500.20000 CNY</span>
+
+                    </div>
+                    <div class="l_R">
+                        <span>6.88 CNY</span>
+                        <span>
+                            <i class="iconfont icon-weixin"></i>
+                            <i class="iconfont icon-zhifubao"></i>
+
+                        </span>
+                        <div class="buy">
+                            购买
+                        </div>
+
+                    </div>
+                </li>
+
+                
+                <!-- 底部 -->
+                <li class="footer">
+                    <div class="footer-t">
+                        <i class="iconfont icon-otcjiaoyi-
+                                        "></i>
+                        <i class="iconfont icon-dingdan
+                                        "></i>
+                        <i class="iconfont icon-wode
+                                        "></i>
+                    </div>
+                    <div class="footer-b">
+                        <span>交易</span>
+                        <span>订单</span>
+                        <span>我的</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="button">
+
+        </div>
+    </div>
+</body>
+
+</html>

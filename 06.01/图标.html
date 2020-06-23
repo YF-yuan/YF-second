@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!-- 面试题：!DOCTYPE html的作用 -->
+<html lang="en">
+<head>
+    <!--
+        meta 元元素
+        charset 设置浏览器编码格式
+        name viewport 表示控制视图
+     -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <!-- initial-scale=2.0 在移动端以2倍的形式 -->
+    <title>图标</title>
+</head>
+<style>
+    /* 
+    选择器的作用及分类
+    css属性的作用是什么？是否具有唯一性？每个属性的作用是什么？是否能够被修改
+
+     */
+
+        /* 
+        谷歌浏览器字号最小为12px 
+        为什么设置字体的大小是偶数不是奇数
+        */
+    .tubiao{
+        margin: 30px 30px;
+    }
+    .search{
+        width: 30px;
+        height: 30px;
+        border: 2px solid black;
+        border-radius:50%;
+        /* display: inline-block; */
+        position: relative;
+    }
+    .search::after{
+        content: "";
+        display: inline-block;
+        width: 2px;
+        height: 15px;
+        border: 1px solid black;
+        background-color: black;
+        position: absolute;
+        left: 30px;
+        top: 25px;
+        transform: rotate(-38deg);
+    }
+    .jiahao{
+        width: 30px;
+        height: 8px;
+        border: 2px solid black;
+        background-color: black;
+        display: inline-block;
+        position: relative;
+    }
+    .jiahao::after{
+        content: "";
+        height: 30px;
+        width: 8px;
+        border: 2px solid black;
+        background-color: black;
+        position: absolute;
+        left: 9px;
+        top: -12px;
+        /* transform: rotate(-38deg); */
+    }
+    .sanjiao{
+        width: 0px;
+        height: 0px;
+        border: 20px solid transparent;
+        border-top: 20px solid black;    
+    }
+    .L{
+        width: 10px;
+        height: 20px;
+        background-color: black;
+        position: relative;
+        transform: rotate(-90deg);
+
+    }
+    /* 4. */
+    .L::after{
+        content: "";
+        width: 0px;
+        height: 0px;
+        border: 15px solid transparent;
+        border-top: 15px solid black; 
+        position: absolute;
+        top: -30px;
+        left: -10px;
+        transform: rotate(180deg);
+    }
+    .R{
+        width: 10px;
+        height: 20px;
+        background-color: black;
+        position: relative;
+        transform: rotate(90deg);
+
+    }
+    .R::after{
+        content: "";
+        width: 0px;
+        height: 0px;
+        border: 15px solid transparent;
+        border-top: 15px solid black; 
+        position: absolute;
+        top: -30px;
+        left: -10px;
+        transform: rotate(180deg);
+    }
+    /* 6. */
+    .home{
+        width: 30px;
+        height: 30px;
+        background-color: black;
+        position: relative;
+    }
+    .home::before{
+        content: "";
+        width: 0px;
+        height: 0px;
+        border: 25px solid transparent;
+        border-top: 25px solid black; 
+        position: absolute;
+        top: -45px;
+        left: -10px;
+        transform: rotate(180deg);
+    }
+    .home::after{
+        content: "";
+        width: 0px;
+        height: 0px;
+        border: 5px solid #ffffff;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        
+    }
+    /* 7. */
+    .cup{
+        width: 6px;
+        height: 20px;
+        background-color: black;
+        position: relative; 
+    }
+    .cup::before{
+        content: "";
+        width: 0px;
+        height: 0px;
+        border: 20px solid transparent;
+        border-top: 20px solid black; 
+        position: absolute;
+        top: -17px;
+        left: -17px;
+    }
+    .cup::after{
+        content: "";
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        border: 5px solid transparent;
+        border-radius: 12%;
+        border-bottom: 5px solid black; 
+        position: absolute;
+        top: -10px;
+        left: -15px;
+    }
+
+    /* 8. */
+    .out{
+        width: 12px;
+        height: 10px;
+        background-color: black;
+        /* box-sizing: border-box; */
+        border-radius: 20%;  
+        position: relative;
+        
+    }
+    .out::before{
+         content: "";
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        border: 8px solid black;
+        border-right: transparent;border-radius: 30%;  
+        border-top-right-radius: 10%;
+        border-bottom-right-radius: 10%;
+        position: absolute;
+        top: -13px;
+        left: -18px;
+    }
+    .out::after{
+       content: "";
+        width: 0px;
+        height: 0px;
+        border: 10px solid transparent;
+        border-top: 10px solid black; 
+        border-radius: 15%;  
+        position: absolute;
+        top: -5px;
+        left: 10px;
+        transform: rotate(-90deg);
+       
+    }
+    /* 9. */
+    .new{
+        width: 0px;
+        height: 0px;
+        border: 10px solid transparent;
+        border-top: 10px solid black; 
+        border-radius: 15%;  
+        border-top-right-radius: 10%;
+        position: relative;
+        transform: rotate(-135deg);
+    }
+    .new::after{
+        content: "";
+        width: 8px;
+        height: 10px;
+        border: 6px solid white;
+        border-top: transparent; 
+        background: black;
+        position: absolute;
+        top: -25px;
+        left: -10px;
+        transform: rotate(180deg);
+    }
+    .new::before{
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        border: 6px solid black;
+        border-radius: 30%;    
+        position: absolute;
+        top: -40px;
+        left: -17px;
+        transform: rotate(45deg);
+    } 
+
+
+
+</style>
+<body>
+    <!-- HbuilderX -->
+    
+    <!-- 
+        1.html 元素 有三个元素
+        div 为本元素 也是伪元素的父元素
+     -->
+     <!-- 1.搜索图标 -->
+     <div class="search tubiao"></div>
+     <!-- 2.加号 -->
+     <div class="jiahao tubiao"></div>
+     <!-- 3.三角形 -->
+     <div class="sanjiao tubiao"></div>
+     <!-- 4.左右箭头 -->
+     <div class="L tubiao"></div>
+     <div class="R tubiao"></div>
+     <!-- 5.上下箭头 -->
+     <div class="T tubiao"></div>
+     <div class="B tubiao"></div>
+     <!-- 6.home -->
+     <div class="home tubiao"></div>
+     <!-- 7.高脚杯 -->
+     <div class="cup tubiao"></div>
+     <!-- 8. out-->
+     <div class="out tubiao"></div>
+     <!-- 9.new -->
+     <div class="new tubiao"></div>
+
+</body>
+</html>
+<!-- 
+    html元素之间的关系是什么？
+    血缘关系：父子（隔代）、爷孙（隔多代）、兄弟
+    
+    dom 树 浏览器解析的顺序
+    先辈分高再到辈分低 同辈之间从上到下
+
+    html 全局属性有哪些？什么是全局属性？什么是私有属性？ 什么是自定义属性？分别举例子 
+    
+    元素的属性是否具有唯一性 每个属性可以赋值多个吗？
+
+ -->

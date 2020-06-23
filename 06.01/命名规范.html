@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>命名规范</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            opacity: 0.2;
+        }
+        
+
+        /* 
+        ！important
+        选择器优先级：只针对多个选择器选中同一个元素的同一个属性，没有冲突，可以叠加
+        1.html元素到底添加了那些样式？
+        只看哪些选择器选择了它以及行内样式
+
+        属性继承：有用自己的，没有用祖籍
+        可以继承的属性：文本属性 颜色 字体
+         */
+
+        p{
+            color: rebeccapurple;
+        }
+        .one{
+            color: red;
+        }
+        body>.one{
+            color: blue;
+        }
+        /* 多出部分用省略号代替 */
+
+        /* 
+        em rem 
+        默认情况下1rem=16px
+        相同：都是相对单位，参照于页面
+        不同点：rem相对于根元素的font-size，默认16px;em相对于距离它最近的祖籍元素 1em=参照物大小*1。
+        谷歌浏览器默认字体大小为16px，最小为12px
+
+        */
+
+        /* 
+        滚动
+        overflow:auto
+        */
+
+        /* 
+        正方体
+        */
+
+        /* 伪类和伪元素 
+        伪类：一个选择器
+        伪元素：一种元素
+        */
+
+        /* 响应式设计 
+        页面大小会随着试图改变而改变
+        原理：相对单位 媒体查询
+
+        */
+
+        /* 页面中使用奇数还是偶数？
+        使用偶数，跟web设计有关
+        */
+
+        /* css优化方案
+        
+        */
+
+        
+        
+
+
+
+
+
+    </style>
+    <p class="one">段落0001</p>
+    <p style="color: cadetblue;">段落0002</p>
+    <p class="">段落0003</p>
+    <p>段落0004</p>
+    <p>段落0005</p>
+
+
+    <!-- 
+        命名规范：
+        1.项目命名
+        统一要求：英文命名
+     -->
+</body>
+</html>
